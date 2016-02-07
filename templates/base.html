@@ -1,10 +1,26 @@
 <!doctype html>
 <html>
-  <body>
+  <head>
     <title> Adventure Time</title>
     <meta name="author" content="Keeyon Ebrahimi">
     <meta name="description" content="Having Fun">
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', 
-    filename='stylesheets/base.css') }}" />
 
+    <!-- Imports -->
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', 
+        filename='stylesheets/base.css') }}" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<link rel="stylesheet" href="w3-theme-indigo.css">
+
+  </head>
+  <body>
+    {% block content %}
+    {% endblock %}
+		<footer class="w3-container w3-card-10 color2 white-text">
+  		<h5>Footer</h5>
+  		<p>Footer information goes here</p>
+		</footer>
+	</body>
+<html>
 

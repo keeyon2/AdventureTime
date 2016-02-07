@@ -1,0 +1,28 @@
+footer{
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  text-align: center;
+}
+
+/* 7. Warm and Bold Theme */
+
+.color1{
+  background-color: #000000
+}
+
+.color2{
+  background-color: #062F4F
+}
+
+.color3{
+  background-color: #813772
+}
+
+.color4{
+  background-color: #B82601
+}
+
+.white-text{
+  color: white;
+}
