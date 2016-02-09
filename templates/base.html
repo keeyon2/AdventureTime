@@ -10,16 +10,18 @@
         filename='stylesheets/base.css') }}" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='javascript/base.js') }}"></script>
 		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-		<link rel="stylesheet" href="w3-theme-indigo.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   </head>
   <body>
     {% block content %}
     {% endblock %}
-		<footer class="w3-container w3-card-10 color2 white-text">
-  		<h5>Footer</h5>
-  		<p>Footer information goes here</p>
+		<footer class="w3-container w3-card-10 bg-color2">
+			<a href="http://www.google.com/search?q=Keeyon+Ebrahimi">
+				<i class="color3 bg-color2 material-icons w3-xlarge">person</i>
+        <p class="color4 bg-color2 no-underline">About Me</p></a>
 		</footer>
 	</body>
 <html>
