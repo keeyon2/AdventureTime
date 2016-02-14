@@ -1,8 +1,35 @@
 {% extends "base.html" %}
+
+{% block imports %}
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', 
+        filename='stylesheets/home.css') }}" />
+   	
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'> 
+{% endblock %}
+
 {% block content %}
-  <h3> This is in the child page </h3>
-  <p> W </p>
-  <p> e </p>
-  <div> l </div>
-  <div> c </div>
+<div class=background-grey"></div>
+<div class="homepage-hero-module">
+    <div class="video-container">
+        <div class="filter"></div>
+        <video autoplay loop class="fillWidth">
+            <source src="{{ url_for('static', filename='assets/videos/Backyard.mp4') }}" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="{{ url_for('static', filename='assets/videos/Backyard.mp4') }}" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+
+        <!-- <div class="poster hidden">
+            <img src="{{ url_for('static', filename='assets/images/Backyard.jpg') }}" alt="">
+        </div> -->
+    </div>
+		<div class="overlay">
+    	<p class="welcome-letters" id='letter-w'> W </p>
+    	<p class="welcome-letters" id='letter-e1'> E </p>
+    	<p class="welcome-letters" id='letter-l'> L </p>
+    	<p class="welcome-letters" id='letter-c'> C </p>
+    	<p class="welcome-letters" id='letter-o'> O </p>
+    	<p class="welcome-letters" id='letter-m'> M </p>
+    	<p class="welcome-letters" id='letter-e2'> E </p>
+		</div>
+</div>
+
 {% endblock %}
